@@ -14,9 +14,9 @@
 
 (function() {
     'use strict';
-    var camellia=document.getElementsByClassName('msg')[0].id;
-    //var crypto = require('crypto');
-    alert(camellia);
+    var mensaje=document.getElementsByClassName('msg')[0].id;
+    var iv=document.getElementsByClassName('iv')[0].id;
+    var llave=document.getElementsByClassName('llave')[0].id;
 
     function decrypt(text, passwd, algorithm, ivt) {
         if (typeof algorithm === 'undefined') { algorithm = 'aes-256-cbc'; }
@@ -28,5 +28,8 @@
         decrypted = Buffer.concat([decrypted, decipher.final()]);
         return decrypted.toString();
        }
+    
+    var mensajeclaro=decrypt(mensaje,llave,'camellia-256-ebc',iv);
+    alert(mensajeclaro);
        
 })();
