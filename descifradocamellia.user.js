@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Descifrado Camellia
 // @namespace    http://github.com/benjaminignc
-// @version      0.1
+// @version      0.2
 // @description  Cifrado Simetrico
 // @author       Benjamín Contreras
 // @match        https://benjaminignc.github.io/Cripto-Tarea3/index.html
