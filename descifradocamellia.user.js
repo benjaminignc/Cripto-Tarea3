@@ -1,15 +1,16 @@
 // ==UserScript==
 // @name         Descifrador Camellia
 // @namespace    http://github.com/benjaminignc
-// @version      0.6
+// @version      0.7
 // @description  Cifrado Simetrico
 // @author       Benjamín Contreras
 // @match        https://benjaminignc.github.io/Cripto-Tarea3/index.html
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/benjaminignc/Cripto-Tarea3/index/descifradocamellia.user.js
 // @downloadURL  https://raw.githubusercontent.com/benjaminignc/Cripto-Tarea3/index/descifradocamellia.user.js
-// @require      https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.js
 // @require      https://cdn.jsdelivr.net/npm/buffer@5.6.0/index.min.js
+// @require      https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.js
+
 
 // ==/UserScript==
 
