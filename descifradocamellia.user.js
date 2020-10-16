@@ -8,13 +8,14 @@
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/benjaminignc/Cripto-Tarea3/index/descifradocamellia.user.js
 // @downloadURL  https://raw.githubusercontent.com/benjaminignc/Cripto-Tarea3/index/descifradocamellia.user.js
-// @require      https://raw.githubusercontent.com/nodejs/node/master/lib/crypto.js
+// @require      https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.js
+
 // ==/UserScript==
 
 (function() {
     'use strict';
     var camellia=document.getElementsByClassName('msg')[0].id;
-    var crypto = require('crypto');
+    //var crypto = require('crypto');
     alert(camellia);
 
     function decrypt(text, passwd, algorithm, ivt) {
