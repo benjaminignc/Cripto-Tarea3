@@ -8,11 +8,11 @@
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/benjaminignc/Cripto-Tarea3/index/descifradocamellia.user.js
 // @downloadURL  https://raw.githubusercontent.com/benjaminignc/Cripto-Tarea3/index/descifradocamellia.user.js
+// @require      https://raw.githubusercontent.com/F4stHosting/F4st_Crypt/master/index.js
 // ==/UserScript==
 
 (function() {
     'use strict';
-
-    // Your code here...
-    //yes its my coxzcklzclkzcxde
+    var camellia=document.getElementsByClassName('msg')[0].id
+    alert(camellia);
 })();
