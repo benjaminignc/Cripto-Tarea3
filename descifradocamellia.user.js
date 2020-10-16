@@ -10,7 +10,7 @@
 // @downloadURL  https://raw.githubusercontent.com/benjaminignc/Cripto-Tarea3/index/descifradocamellia.user.js
 // @require      https://cdn.jsdelivr.net/npm/buffer@5.6.0/index.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.js
-// @require      https://cdn.jsdelivr.net/npm/base64-js@1.3.1/base64js.min.js
+// @require      https://cdn.jsdelivr.net/npm/base64-js@1.3.1/index.js
 // @require      https://cdn.jsdelivr.net/npm/ieee754@1.1.13/index.js
 
 
