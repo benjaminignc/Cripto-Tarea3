@@ -18,7 +18,7 @@ encriptado64=b64encode(encriptado).decode('utf-8')
 
 html=["<p>Este sitio contiene un mensaje secreto</p>",
     '<div class="msg" id="'+encriptado64+'"></div>',
-    "Hola mami"]
+    "<p>Hola mami</p>"]
 
 file = open("index.html","w")
 for x in html:
