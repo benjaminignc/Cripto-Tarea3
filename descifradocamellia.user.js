@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hola
 // @namespace    http://github.com/benjaminignc
-// @version      0.4
+// @version      0.5
 // @description  Hola si ssi hola hola
 // @author       Benjamín Contreras
 // @match        https://benjaminignc.github.io/Cripto-Tarea3/index.html
