@@ -5,10 +5,10 @@ from base64 import b64encode
 #from flask import Flask, render_template
 
 #app = Flask(__name__)
-texto=b"Esto deberia encriptarse"
+texto=bytes(input("Introducir texto claro:"), 'utf-8')
 padding=pkcs.Encoder(camellia.block_size)
 encoder=padding.encode(texto)
-llave=b"00112233445566778899aabbccddeeff"
+llave=bytes(input("Introducir llave:"), 'utf-8')
 iv=os.urandom(16)
 
 modo=camellia.MODE_ECB
@@ -27,13 +27,3 @@ file = open("index.html","w")
 for x in html:
     file.write(x + '\n')
 file.close()
-
-#@app.route('/')
-#def index(id=encriptado64):
-    #try:
-        #return render_template('index.html',id=id)
-    #except Exception as e:
-        #return str(e)
-
-#if __name__ == "__main__":
-    #app.run(debug=True)
