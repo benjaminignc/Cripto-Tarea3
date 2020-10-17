@@ -7,12 +7,11 @@ texto=bytes(input("Introducir texto claro:"), 'utf-8')
 padding=pkcs.Encoder(camellia.block_size)
 encoder=padding.encode(texto)
 llave=bytes(input("Introducir llave:"), 'utf-8')
-encoderllave=padding.encode(llave)
 iv=os.urandom(16)
 rounds=int(input("Introducir numero de rondas:"))
 
 modo=camellia.MODE_ECB
-cypher=camellia.CamelliaCipher(key=encoderllave, iv=iv, mode=modo)
+cypher=camellia.CamelliaCipher(key=llave, iv=iv, mode=modo)
 encriptado=cypher.encrypt(encoder)
 for x in range(rounds-1):
     encriptadoRounds=cypher.encrypt(encoder)
